@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace RandomProblemSolving
 {
     class Program
