@@ -2,7 +2,7 @@
 
 namespace RandomProblemSolving
 {
-    class recursion1
+    class RecursionStringLength
     {
         /*public static int CalculateSumRec(int n, int m)
         {
