@@ -37,10 +37,10 @@ namespace RandomProblemSolving
             removeDupDict(arr, n);*/
             //removeDupHashSet(arr);
 
-            int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
-            int n = arr.Length;
+            //int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
+            //int n = arr.Length;
             //int[] temp = new int[n];
-            int j = 0;
+            //int j = 0;
 
             //USING EXTRA SPACE
             /*for (int i = 0; i < n - 1; i++)
@@ -51,7 +51,7 @@ namespace RandomProblemSolving
                     j++;
                 }
             }
-            temp[j] = arr[n - 1];
+            temp[j++] = arr[n - 1];
 
             for (int i = 0; i < j; i++)
             {
@@ -68,12 +68,50 @@ namespace RandomProblemSolving
                     j++;
                 }
             }
-            arr[j] = arr[n - 1];
+            arr[j++] = arr[n - 1];
 
             for (int i = 0; i < j; i++)
             {
                 Console.WriteLine(arr[i]);
             }*/
+
+            string[] strList = new string[] { "John", "Taylor", "John", "Pikachu", "Marco", "Macino", "Pikachu", "Pikachu", "Machino", "Macino" };
+            Array.Sort(strList);
+            int n = strList.Length;
+            string[] temp = new string[n];
+            int j = 0;
+
+            //USING EXTRA SPACE
+            /*for (int i = 0; i < n - 1; i++)
+            {
+                if (strList[i] != strList[i+1])
+                {
+                    temp[j] = strList[i];
+                    j++;
+                }
+            }
+            temp[j++] = strList[n - 1];
+
+            for (int i = 0; i < j; i++)
+            {
+                strList[i] = temp[i];
+                Console.WriteLine(strList[i]);
+            }*/
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                if (strList[i] != strList[i+1])
+                {
+                    strList[j] = strList[i];
+                    j++;
+                }
+            }
+            strList[j++] = strList[n - 1];
+            for (int i = 0; i < j; i++)
+            {
+                Console.WriteLine(strList[i]);
+            }
+            
         }
     }
 }
