@@ -1,9 +1,24 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 namespace RandomProblemSolving
 {
     public class RemoveDuplicateFromArray
     {
-        //SET DATA STRUCTURE
+        //DISTINCT METHOD: using System.Linq;
+        /*int[] s = { 1, 2, 3, 3, 4 };
+            int[] q = s.Distinct().ToArray();
+            for (int i = 0; i < q.Length; i++)
+            {
+                Console.WriteLine(q[i]);
+            }*/
+        /*string[] str = new string[] { "John", "Taylor", "John" };
+        string[] str2 = str.Distinct().ToArray();
+        for (int i = 0; i < str2.Length; i++)
+        {
+            Console.WriteLine(str2[i]);
+        }*/
+
+        //SET DATA STRUCTURE: using System.Collections.Generic;
         /*static void removeDupHashSet(int[] arr)
         {
             HashSet<int> set = new HashSet<int>();
@@ -17,7 +32,7 @@ namespace RandomProblemSolving
             }
         }*/
 
-        //MAP DATA STRUCTURE
+        //MAP DATA STRUCTURE: using System.Collections.Generic;
         /*static void removeDupDict(int[] arr, int n)
         {
             Dictionary<int, Boolean> mp = new Dictionary<int, Boolean>();
@@ -31,7 +46,7 @@ namespace RandomProblemSolving
             }
         }*/
 
-        
+        //REMOVE DUPLICATE FROM INT ARRAY
         //int[] arr = { 1, 2, 5, 1, 7, 2, 4, 2 };
         /*int n = arr.Length;
         removeDupDict(arr, n);*/
@@ -75,6 +90,7 @@ namespace RandomProblemSolving
             Console.WriteLine(arr[i]);
         }*/
 
+        //REMOVE DUPLICATE FROM STRING ARRAY
         /*string[] strList = new string[] { "John", "Taylor", "John", "Pikachu", "Marco", "Macino", "Pikachu", "Pikachu", "Machino", "Macino" };
         Array.Sort(strList);
         int n = strList.Length;
@@ -98,7 +114,7 @@ namespace RandomProblemSolving
             Console.WriteLine(strList[i]);
         }*/
 
-        //USING CONSTANT EXTRA SPACE
+        //USING CONSTANT SPACE
         /*for (int i = 0; i < n - 1; i++)
         {
             if (strList[i] != strList[i + 1])
