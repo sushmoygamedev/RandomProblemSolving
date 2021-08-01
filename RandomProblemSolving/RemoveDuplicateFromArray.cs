@@ -49,8 +49,8 @@ namespace RandomProblemSolving
         //REMOVE DUPLICATE FROM INT ARRAY
         //int[] arr = { 1, 2, 5, 1, 7, 2, 4, 2 };
         /*int n = arr.Length;
-        removeDupDict(arr, n);*/
-        //removeDupHashSet(arr);
+        removeDupDict(arr, n);*/ //MAP DATASTRUCTURE
+        //removeDupHashSet(arr); //SET DATASTRUCTURE
 
         //int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
         //int n = arr.Length;
