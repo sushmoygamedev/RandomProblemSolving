@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RandomProblemSolving
+﻿namespace RandomProblemSolving
 {
     class Program
     {
