@@ -24,9 +24,11 @@ namespace RandomProblemSolving
             return (str + ": " + sortStr1Char);
         }*/
         #endregion
+
         static void Main(string[] args)
         {
             #region Solving...
+            #region Alternating Caps Test
             /*string str = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
             string newStr = string.Empty;
             for (int i = 0; i < str.Length; i++)
@@ -105,6 +107,7 @@ namespace RandomProblemSolving
                 
             }*/
             //Console.WriteLine(modStr);
+            #endregion
             #endregion
             #region Solved.
             /*string strSomething = "something";
@@ -1541,10 +1544,10 @@ namespace RandomProblemSolving
             }*/
 
             #region Check for Angrams
-            /*string str1 = "cristian".ToLower();
+            /*string str1 = "Apple".ToLower();
             string sortStr1Char = (sortedString(str1));
-            Console.WriteLine(sortStr1Char);
-            *//*char[] str1Char = str1.ToCharArray();
+            Console.WriteLine(sortStr1Char);*/
+            /*char[] str1Char = str1.ToCharArray();
             for (int i = 0; i < str1Char.Length-1; i++)
             {
                 if (str1Char[i] > str1Char[i+1])
@@ -1556,12 +1559,12 @@ namespace RandomProblemSolving
                 }
             }
             string sortStr1Char = new string(str1Char);
-            Console.WriteLine(str1 + ": " + sortStr1Char);*//*
+            Console.WriteLine(str1 + ": " + sortStr1Char);*/
 
-            string str2 = "Cristina".ToLower();
+            /*string str2 = "Appeal".ToLower();
             string sortStr2Char = (sortedString(str2));
-            Console.WriteLine(sortStr2Char);
-            *//*char[] str2Char = str2.ToCharArray();
+            Console.WriteLine(sortStr2Char);*/
+            /*char[] str2Char = str2.ToCharArray();
             for (int i = 0; i < str2Char.Length - 1; i++)
             {
                 if (str2Char[i] > str2Char[i + 1])
@@ -1573,9 +1576,9 @@ namespace RandomProblemSolving
                 }
             }
             string sortStr2Char = new string(str2Char);
-            Console.WriteLine(str2 + ": " + sortStr2Char);*//*
+            Console.WriteLine(str2 + ": " + sortStr2Char);*/
 
-            bool flag = false;
+            /*bool flag = false;
             for (int i = 0; i < sortStr1Char.Length; i++)
             {
                 if (sortStr1Char[i] == sortStr2Char[i])
@@ -1591,6 +1594,7 @@ namespace RandomProblemSolving
             #endregion
             #endregion
             #region Test
+            #region Compounding Letter Without Trim
             /*string str = "abcd";
             string strNew = string.Empty;
             for (int i = 0; i < str.Length; i++)
@@ -1631,6 +1635,54 @@ namespace RandomProblemSolving
 
             }
             Console.WriteLine(strNew);*/
+            #endregion
+            #region Switcharoo Test
+            /*object[] values = { (string) "adsw", (string) "te" };
+            
+            for (int i = 0; i < values.Length; i++)
+            {
+                Type dataType = values[i].GetType();
+
+                if (!dataType.Equals(typeof(string)))
+                {
+                    Console.WriteLine("incomp");
+                    break;
+                }
+                else
+                {
+                    if (values[i][0] == values[i][values.Length - 1])
+                    {
+
+                    }
+                }
+            }*/
+            //string num = "1231";
+            //Type type = num.GetType();
+            /*if (!type.Equals(typeof(string)))
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }*/
+            /*string str = "Anna, Banana";
+            if (str.Length < 2)
+            {
+                Console.WriteLine("Incompatible.");
+            }
+            else
+            {
+                if (str[0] != str[str.Length - 1])
+                {
+                    Console.WriteLine(str[str.Length - 1] + str.Substring(1, str.Length - 2) + str[0]);
+                }
+                else
+                {
+                    Console.WriteLine("Two's a pair.");
+                }
+            }*/
+            #endregion
             #endregion
 
             
