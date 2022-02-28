@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using System.Text;
 
 namespace RandomProblemSolving
 {
@@ -107,6 +108,53 @@ namespace RandomProblemSolving
                 
             }*/
             //Console.WriteLine(modStr);
+            #endregion
+            #region Switcharoo Test
+            /*object[] values = { (string) "adsw", (string) "te" };
+            
+            for (int i = 0; i < values.Length; i++)
+            {
+                Type dataType = values[i].GetType();
+
+                if (!dataType.Equals(typeof(string)))
+                {
+                    Console.WriteLine("incomp");
+                    break;
+                }
+                else
+                {
+                    if (values[i][0] == values[i][values.Length - 1])
+                    {
+
+                    }
+                }
+            }*/
+            //string num = "1231";
+            //Type type = num.GetType();
+            /*if (!type.Equals(typeof(string)))
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }*/
+            /*string str = "Anna, Banana";
+            if (str.Length < 2)
+            {
+                Console.WriteLine("Incompatible.");
+            }
+            else
+            {
+                if (str[0] != str[str.Length - 1])
+                {
+                    Console.WriteLine(str[str.Length - 1] + str.Substring(1, str.Length - 2) + str[0]);
+                }
+                else
+                {
+                    Console.WriteLine("Two's a pair.");
+                }
+            }*/
             #endregion
             #endregion
             #region Solved.
@@ -1359,6 +1407,48 @@ namespace RandomProblemSolving
                 Console.WriteLine(item);
             }*/
 
+            #region Compounding Letter Without Trim
+            /*string str = "abcd";
+            string strNew = string.Empty;
+            for (int i = 0; i < str.Length; i++)
+            {
+                strNew += str[i];
+                if (str[i] == str[str.Length - 1])
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        strNew += (str[i]);
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        strNew += (str[i]);
+                    }
+                    strNew += ("-");
+                }
+                
+                *//*Console.Write(str[i]);
+                if (str[i] == str[str.Length - 1])
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        Console.Write(str[i]);
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        Console.Write(str[i]);
+                    }
+                    Console.Write("-");
+                }*//*
+
+            }
+            Console.WriteLine(strNew);*/
+            #endregion
             /*string str = "abcd";
             string newStr = string.Empty;
             for (int i = 0; i < str.Length; i++)
@@ -1593,99 +1683,61 @@ namespace RandomProblemSolving
             Console.WriteLine(flag);*/
             #endregion
             #endregion
-            #region Test
-            #region Compounding Letter Without Trim
-            /*string str = "abcd";
-            string strNew = string.Empty;
+
+            /*string str = "How are you?";
+            string skipSpaceInStr = string.Empty;
+            string newStr = string.Empty;
+            // Spliting space without Split function
             for (int i = 0; i < str.Length; i++)
             {
-                strNew += str[i];
-                if (str[i] == str[str.Length - 1])
+                if (str[i] == ' ')
                 {
-                    for (int j = 0; j < i; j++)
-                    {
-                        strNew += (str[i]);
-                    }
+                    skipSpaceInStr += "";
                 }
                 else
                 {
-                    for (int j = 0; j < i; j++)
-                    {
-                        strNew += (str[i]);
-                    }
-                    strNew += ("-");
+                    skipSpaceInStr += str[i];
                 }
-                
-                *//*Console.Write(str[i]);
-                if (str[i] == str[str.Length - 1])
+            }
+
+            for (int i = 0; i < skipSpaceInStr.Length; i++)
+            {
+                if (i % 2 == 0)
                 {
-                    for (int j = 0; j < i; j++)
-                    {
-                        Console.Write(str[i]);
-                    }
+                    newStr += char.ToUpper(skipSpaceInStr[i]);
                 }
                 else
                 {
-                    for (int j = 0; j < i; j++)
-                    {
-                        Console.Write(str[i]);
-                    }
-                    Console.Write("-");
-                }*//*
+                    newStr += char.ToLower(skipSpaceInStr[i]);
+                }
+            }
+            Console.WriteLine(newStr);*/
+
+            /*string str = "What is your name?";
+            string[] strSplit = str.Split(' ');
+            string strNoSpace = string.Empty;
+            string newStr = string.Empty;
+
+            for (int i = 0; i < strSplit.Length; i++)
+            {
+                strNoSpace += strSplit[i];
 
             }
-            Console.WriteLine(strNew);*/
-            #endregion
-            #region Switcharoo Test
-            /*object[] values = { (string) "adsw", (string) "te" };
-            
-            for (int i = 0; i < values.Length; i++)
+            for (int i = 0; i < strNoSpace.Length; i++)
             {
-                Type dataType = values[i].GetType();
-
-                if (!dataType.Equals(typeof(string)))
+                if (i % 2 == 0)
                 {
-                    Console.WriteLine("incomp");
-                    break;
+                    newStr += char.ToUpper(strNoSpace[i]);
                 }
                 else
                 {
-                    if (values[i][0] == values[i][values.Length - 1])
-                    {
-
-                    }
+                    newStr += char.ToLower(strNoSpace[i]);
                 }
-            }*/
-            //string num = "1231";
-            //Type type = num.GetType();
-            /*if (!type.Equals(typeof(string)))
-            {
-                Console.WriteLine(true);
+                newStr += ' ';
             }
-            else
-            {
-                Console.WriteLine(false);
-            }*/
-            /*string str = "Anna, Banana";
-            if (str.Length < 2)
-            {
-                Console.WriteLine("Incompatible.");
-            }
-            else
-            {
-                if (str[0] != str[str.Length - 1])
-                {
-                    Console.WriteLine(str[str.Length - 1] + str.Substring(1, str.Length - 2) + str[0]);
-                }
-                else
-                {
-                    Console.WriteLine("Two's a pair.");
-                }
-            }*/
-            #endregion
-            #endregion
+            Console.WriteLine(newStr);*/
 
-            
+
         }
     }
 }
