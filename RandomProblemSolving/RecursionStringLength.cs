@@ -30,3 +30,15 @@ namespace RandomProblemSolving
         }
     }
 }
+/*string str = "wordcounter";
+            str += '\0';
+            *//*int x = 0;
+            while (str[x] != '\0')
+                x++;
+            Console.WriteLine(x);*//*
+            int c = 0;
+            for (int i = 0; str[i] != '\0'; i++)
+            {
+                c = i;
+            }
+            Console.WriteLine(c);*/
