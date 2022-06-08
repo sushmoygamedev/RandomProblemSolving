@@ -80,3 +80,72 @@ namespace RandomProblemSolving
         }
     }
 }
+/*SOME OTHER SOLUTIONS*/
+/*string str1 = "samurai";
+string str2 = "rai";
+string strReverse = string.Empty;
+bool flag = false;
+
+if (str1.Length > str2.Length)
+{
+    for (int i = str2.Length; i > 0; i--)
+    {
+        strReverse += str1[str1.Length - i];
+    }
+    if (strReverse == str2)
+    {
+        flag = true;
+    }
+    Console.WriteLine(flag);
+}
+else
+{
+    for (int i = str1.Length; i > 0; i--)
+    {
+        strReverse += str2[str2.Length - i];
+    }
+    if (strReverse == str1)
+    {
+        flag = true;
+    }
+    Console.WriteLine(flag);
+}*/
+
+/*
+if (str1.Length < str2.Length)
+{
+    for (int i = str1.Length; i > 0; i--)
+    {
+        //Console.WriteLine(str1[str1.Length - i]);
+
+        if (str1[str1.Length - i] == str2[str2.Length - i])
+        {
+            flag = true;
+
+        }
+        else
+        {
+            flag = false;
+            break;
+        }
+    }
+}
+else
+{
+    for (int i = str2.Length; i > 0; i--)
+    {
+        //Console.WriteLine(str1[str1.Length - i]);
+
+        if (str1[str1.Length - i] == str2[str2.Length - i])
+        {
+            flag = true;
+
+        }
+        else
+        {
+            flag = false;
+            break;
+        }
+    }
+}
+Console.WriteLine(flag);*/
