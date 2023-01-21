@@ -6,12 +6,38 @@ namespace RandomProblemSolving
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name?");
-            string name = Console.ReadLine();
-            Console.WriteLine("What do you want?");
-            string want = Console.ReadLine();
+            Console.Write("INPUT: ");
+            string str = Console.ReadLine();
+            char[] strChar = new char[str.Length];
+            
+            for(int i = 0; i < str.Length; i++)
+            {
+                strChar[i] = str[i];
+            }
+            for (int i = 0; i < strChar.Length-1; i++)
+            {
+                if (strChar[i] > strChar[i+1])
+                {
+                    char ch = strChar[i];
+                    strChar[i] = strChar[i +1];
+                    strChar[i + 1] = ch;
+                    i = -1;
+                }
+            }
+            string newStr = new string(strChar);
+            Console.WriteLine(newStr);
 
-            Console.WriteLine("Welcome {0} and You want {1}", name, want);
+            int count = 0;
+            for (int i = 0; i < newStr.Length-1; i++)
+            {
+                //Console.WriteLine(newStr[i]);
+                if(newStr[i] == newStr[i+1])
+                {
+                    //Console.WriteLine(newStr[i]);
+                    count++;
+                }
+            }
+            Console.WriteLine(count);
         }
     }
 }
