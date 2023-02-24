@@ -45,3 +45,10 @@ namespace RandomProblemSolving
         public static string ConcatName(string firstName, string lastName) => lastName + "," + firstName;
     }
 }
+
+/*
+ // TRIGGER
+
+ BuggyCode result = new BuggyCode();
+            result.Greeting();
+ */

@@ -4,19 +4,23 @@ namespace RandomProblemSolving
 {
     public class EmptyOrNull
     {
-        public string str = Console.ReadLine();
+        public string str;
 
         public void isEmpty()
         {
-            if (string.IsNullOrEmpty(str))
+            while(true)
             {
-                Console.WriteLine(true);
+                Console.Write("Enter Some Text Or Leave It Blank: ");
+                str = Console.ReadLine();
+                if (string.IsNullOrEmpty(str))
+                {
+                    Console.WriteLine("Input Is Empty: " + "\"" + true + "\"" + "\n");
+                }
+                else
+                {
+                    Console.WriteLine("Input Is Not Empty: " + "\"" + false + "\"" + "\n");
+                }
             }
-            else
-            {
-                Console.WriteLine(false);
-            }
-
             /*string str = null;
             bool result = true;
             for(int i =0; i <= str.Length; i++)
@@ -33,3 +37,9 @@ namespace RandomProblemSolving
         }
     }
 }
+
+/*
+ // TRIGGER
+EmptyOrNull test = new EmptyOrNull();
+            test.isEmpty();
+ */
