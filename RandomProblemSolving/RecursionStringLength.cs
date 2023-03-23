@@ -42,3 +42,9 @@ namespace RandomProblemSolving
                 c = i;
             }
             Console.WriteLine(c);*/
+
+/*
+ // TRIGGER
+string str = "apple";
+Console.WriteLine(RecursionStringLength.recStringLen(str));
+ */

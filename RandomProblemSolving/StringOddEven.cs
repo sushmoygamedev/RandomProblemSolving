@@ -24,3 +24,8 @@ namespace RandomProblemSolving
         }
     }
 }
+
+/*
+ // TRIGGER
+StringOddEven.StringCount();
+ */

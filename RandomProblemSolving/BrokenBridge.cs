@@ -22,3 +22,21 @@
         }
     }
 }
+
+/*
+ // TRIGGER
+ while(true)
+            {
+                Console.Write("Make a bridge or Break it: ");
+                string bridge = Console.ReadLine();
+                if (string.IsNullOrEmpty(bridge) )
+                {
+                    break;
+                }
+                else
+                {
+                    //Console.Write("\n" + bridge + ": ");
+                    Console.WriteLine("Flag: " + BrokenBridge.IsBridgeSafe(bridge));
+                }
+            }
+ */

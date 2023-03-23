@@ -17,15 +17,22 @@ namespace RandomProblemSolving
 
             try
             {
-                Console.Write("Insert a character: ");
-                char insertChar = Convert.ToChar(Console.ReadLine());
-                int CharInt = Convert.ToInt32(insertChar);
-                Console.WriteLine("Char: " + insertChar + " - " + CharInt);
+                while (true)
+                {
+                    Console.Write("Insert a character: ");
+                    char insertChar = Convert.ToChar(Console.ReadLine());
+                    int CharInt = Convert.ToInt32(insertChar);
+                    Console.WriteLine("Char: " + insertChar + " - " + CharInt);
+                }
             }
             catch (Exception)
             {
-                Console.WriteLine("Not a char! It's a string.");
+                Console.WriteLine("Not a char! It's a string. or Empty!");
             }
         }
     }
 }
+/*
+ // RUN
+ CharAscii.Ascii();
+ */

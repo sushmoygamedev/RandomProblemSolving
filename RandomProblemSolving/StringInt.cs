@@ -14,3 +14,9 @@ namespace RandomProblemSolving
         }
     }
 }
+
+/*
+// TRIGGER
+StringInt strTest = new StringInt();
+strTest.isInt();
+ */

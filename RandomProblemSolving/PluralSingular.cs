@@ -64,3 +64,8 @@ namespace RandomProblemSolving
         }
     }
 }
+/*
+ // RUN
+PluralSingular instance = new PluralSingular();
+            instance.isPlural();
+ */
