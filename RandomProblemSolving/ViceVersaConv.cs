@@ -33,3 +33,12 @@ namespace RandomProblemSolving
         Console.WriteLine("\"" + numIntToStr + "\"" + ": " + "(" + numIntToStr.GetType() + ")");*/
     }
 }
+/*
+ // RUN
+ ViceVersaConv instance = new ViceVersaConv();
+            Console.Write("Type a number (To Int): ");
+            Console.WriteLine(instance.toInt(Console.ReadLine()));
+            Console.WriteLine("---------------------------------------");
+            Console.Write("Type a number (To String): ");
+            Console.WriteLine(instance.toStr(Convert.ToInt32(Console.ReadLine())));
+ */

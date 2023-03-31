@@ -16,3 +16,10 @@
         }
     }
 }
+/*
+ // RUN
+Console.Write("Type a Word: ");
+            ConFirstLast test = new ConFirstLast();
+            string str = Console.ReadLine();
+            Console.WriteLine(test.FirstLast(str));
+ */

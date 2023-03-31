@@ -1,15 +1,18 @@
 ﻿/*main method code*/
-/*Console.Write("Insert Number1: ");
-float num1 = Convert.ToSingle(Console.ReadLine());
-Console.Write("Insert Operator: ");
+/*for (int i = 0; i < 6; i++)
+            {
+                Console.Write("Insert Number1: ");
+                float num1 = Convert.ToSingle(Console.ReadLine());
+                Console.Write("Insert Operator: ");
 
-char op = Convert.ToChar(Console.ReadLine());
-Console.Write("Insert Number2: ");
-float num2 = Convert.ToSingle(Console.ReadLine());
+                char op = Convert.ToChar(Console.ReadLine());
+                Console.Write("Insert Number2: ");
+                float num2 = Convert.ToSingle(Console.ReadLine());
 
-StringOperator instence = new StringOperator();
-Console.Write("Calc: ");
-Console.WriteLine(instence.Calculate(num1, num2, op));*/
+                StringOperator instence = new StringOperator();
+                Console.Write("Calc: ");
+                Console.WriteLine(instence.Calculate(num1, num2, op));
+            }*/
 using System;
 
 namespace RandomProblemSolving
